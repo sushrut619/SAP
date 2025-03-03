@@ -1,0 +1,634 @@
+#separator:tab
+#html:true
+"IAM
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    <b>Indentity and Access Management</b><br>Used to define and control who can access which resource in an AWS environment<br><br>Can utilize OpenID Connect (OIDC)
+  </div>
+
+  <div class=""footer"">
+    auth service
+  </div>
+</div>"
+"MFA
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    <b>Multi-Factor Authentication<br></b>Best practice for auth
+  </div>
+
+  <div class=""footer"">
+    auth practice
+  </div>
+</div>"
+"CLI
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    <b>Command-Line Interface<br></b>method of issuing commands to computer systems
+  </div>
+
+  <div class=""footer"">
+    tech
+  </div>
+</div>"
+"SDK
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    <b>Software Development Kits<br></b>set of software tools and programs that developers can use to build applications
+  </div>
+
+  <div class=""footer"">
+    tech
+  </div>
+</div>"
+"IAM User
+
+<div class=""footer"">
+Can an IAM user be assigned to multiple IAM user groups?
+</div>"	"  <div class=""content"">
+    entity designed to be associated with an individual or application.&nbsp;<br>IAM users can access AWS resources through AWS Management Console and CLI<br>Can not be used across multiple accounts
+  </div>
+
+  <div class=""footer"">
+    auth
+  </div>
+</div>"
+"IAM User Group
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    An IAM user group is a collection of IAM users. It cannot be used to access AWS services directly.
+  </div>
+
+  <div class=""footer"">
+    auth
+  </div>
+</div>"
+"IAM Roles
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    identity not associated with a single individual or application, but can be assumed by multiple entities.<br>Used to provide temporary credentials to entities.<br>Cannot span multiple accounts
+  </div>
+
+  <div class=""footer"">
+    auth
+  </div>
+</div>"
+"IAM Policy
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Access control for IAM identities or to AWS resources.<br>Types include:<br>
+<ul>
+  <li>identitty-based policies</li>
+  <li>resource-based policies</li>
+  <li>permission boundaries</li>
+  <li>organization's service control policies (SCPs)</li>
+  <li>access control lists (ACLs)</li>
+  <li>and session policies.</li>
+</ul>
+  </div>
+
+  <div class=""footer"">
+    auth
+  </div>
+</div>"
+"Identity-Based Policies
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    JSON policy documents attached to IAM identities.<br>Controls actions that an IAM Identity can perform<br>Can be managed or inline.
+  </div>
+
+  <div class=""footer"">
+    auth
+  </div>
+</div>"
+"IAM Identities
+
+<div class=""footer"">
+An IAM identity has which permissions by default?
+</div>"	"  <div class=""content"">
+    IAM users, user groups, or roles
+  </div>
+
+  <div class=""footer"">
+    auth
+  </div>
+</div>"
+"Managed Policy
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    IAM Identity based policy that can be maintained by either AWS or the customer. Can be assigned to any number of IAM identities.
+  </div>
+
+  <div class=""footer"">
+    auth
+  </div>
+</div>"
+"AWS-Managed Policies
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Policies created and managed by AWS
+  </div>
+
+  <div class=""footer"">
+    auth
+  </div>
+</div>"
+"Customer-Managed Policies
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    IAM Identity-based policy created and managed by AWS customers
+  </div>
+
+  <div class=""footer"">
+    auth
+  </div>
+</div>"
+"Inline Policies
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    IAM Identity-Based policy directly attached to a single IAM identity. The life cycle is the same as the identity's life cycle
+  </div>
+
+  <div class=""footer"">
+    auth
+  </div>
+</div>"
+"Resource-based policies
+
+<div class=""footer"">
+True or False? Resource based policies are always inline policies.
+<br>
+<input type=""radio"" id=""true"" name=""true_or_false"" value=""true"" checked=""checked"">
+<label for=""html"">True</label><br>
+<input type=""radio"" id=""false"" name=""true_or_false"" value=""true"">
+<label for=""css"">False</label>
+</div>"	"  <div class=""content"">
+    IAM policy attached to AWS resource that control the actions that can be done to them and the principals that can do them and under the what conditions.<br><br>Not all AWS resources support resource-based policies.
+  </div>
+
+  <div class=""footer"">
+    auth
+  </div>
+</div>"
+"Principal
+
+<div class=""footer"">
+Principal = IAM entity?
+</div>"	"  <div class=""content"">
+    IAM user or role. Also called IAM entity.
+  </div>
+
+  <div class=""footer"">
+    auth
+  </div>
+</div>"
+"Permission Boundaries
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Defines the maximum permissions that identity-based policies can give to IAM entities. Does not limit resource-based policies.<br>Used to prevent privilege escalations
+  </div>
+
+  <div class=""footer"">
+    auth practice
+  </div>
+</div>"
+"Organization SCP
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Limits permissions for member accounts in organizations and individual OUs
+  </div>
+
+  <div class=""footer"">
+    auth
+  </div>
+</div>"
+"AWS Organizations
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Service that allows for the management of multiple AWS accounts belonging to the same organization. Allows the organization to be broken down into organizational units (OUs).&nbsp;<br>Also features SCPs
+  </div>
+
+  <div class=""footer"">
+    auth service
+  </div>
+</div>"
+"ACL
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Action Control Lists<br>controls the access of external principals<br><br>can be defined by XML, not JSON<br>can not be used to controll access within the same account as the principal requesting access<br><br>addresses weaknesses of resouces-based policies
+  </div>
+
+  <div class=""footer"">
+    auth
+  </div>
+</div>"
+"Session Policies
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Used to limit programmatic &amp; temporary sessions for a role or federated user.<br><br>
+Controlled through AWS Security Token Service <br><br>
+for roles, accessed through API operations <code>AssumeRole</code>, <code>AssumeRoleWithSAML</code>, and  <code>AssumeRoleWithWebIdentity</code>
+<br>
+for federated users, temporary sessions are created using <code>GetFederationToken</code>
+  </div>
+
+  <div class=""footer"">
+    auth
+  </div>
+</div>"
+"RBAC
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Role-Based Access Control<br>traditional access control where perms are granted to principals based on the function that person has in their job<br><br>Does not scale well
+  </div>
+
+  <div class=""footer"">
+    auth practice
+  </div>
+</div>"
+"ABAC
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Attribute-Based Access Control<br>Access Control strategy based on tagging resources and principals
+  </div>
+
+  <div class=""footer"">
+    auth practice
+  </div>
+</div>"
+"AWS RAM
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    AWS Resource Access Manager<br><br>services allowing for the sharing of resources across multiple accounts
+  </div>
+
+  <div class=""footer"">
+    auth service
+  </div>
+</div>"
+"AWS SSO
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    AWS Single Sign-On<br><br>Service that allows for user federation/authentication across multiple AWS accounts<br><br>Can be synchronized via System for Cross-domain Identity Management (SCIM) or by Security Assertion Markup Language (SAML 2.0)
+  </div>
+
+  <div class=""footer"">
+    auth service
+  </div>
+</div>"
+"AWS Directory Service
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Directory Service offered by AWS to manage users, groups, devices, and access<br>Can integrate with MS AD or LDAP<br>MS AD options include<br><ul><li>simple AD</li><li>AD Connector</li><li>Managed MS AD</li></ul>
+  </div>
+
+  <div class=""footer"">
+    auth service
+  </div>
+</div>"
+"Simple AD
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    AWS Directory Service option for MS AD that provides basic AD features for applications or services on AWS<br>Does not support MFA, cross domain trust relationships, RDS<br>Use to support Windows/Linux workloads that need AD/LDAP or to work with AWS application
+  </div>
+
+  <div class=""footer"">
+    auth
+  </div>
+</div>"
+"AD Connector
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    AWS Directory Service option that forwards AD requests to on-prem AD<br>Can be leveraged to authentication/authorize users for AWS Management COnsole<br>Does not cache info on AWS<br><br>Not compatible with AWS RDS or Amazon FSx
+  </div>
+
+  <div class=""footer"">
+    auth
+  </div>
+</div>"
+"Managed Microsoft AD
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    AWS Directory Service option that runs MS AD as a managed service on AWS. Supports MS SharePoint, SQL Server, other .NET applications, and various AWS services<br><br>Deployed across multiple Availability Zones by default.
+  </div>
+
+  <div class=""footer"">
+    auth
+  </div>
+</div>"
+"Route 53
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Domain Name System
+  </div>
+
+  <div class=""footer"">
+    service
+  </div>
+</div>"
+"SCIM
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    <ul><li>System for Cross-domain Identity Management</li><li>synchronizes identity provider user attributes with named attributes in IAM Identity Center</li></ul>
+  </div>
+
+  <div class=""footer"">
+    auth service
+  </div>
+</div>"
+"IdP
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Identity Provider<br>ex: OpenID Connect, MS AD, Google SSO
+  </div>
+
+  <div class=""footer"">
+    auth
+  </div>
+</div>"
+"VGW
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Virtual Private Gateway<br><br>VPN endpoint on the Amazon side of your Site-to-Site VPN connection that can be attached to a single VPC.
+  </div>
+
+  <div class=""footer"">
+    Networking
+  </div>
+</div>"
+"AWS Managed VPN
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    fully managed service that provides VPN connection from on-prem network equipment to AWS-managed network equipment attached to AWS VPC<br><br>Provides redundancy and automatic failover
+  </div>
+
+  <div class=""footer"">
+    Networking service
+  </div>
+</div>"
+"TGW
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Transit Gateway<br><br>A transit hub that can be
+                    used to interconnect multiple VPCs and on-premises 
+networks, and as a VPN endpoint for the Amazon side of the
+                    Site-to-Site VPN connection.<br><br>Often used in hub-and-spoke network models
+  </div>
+
+  <div class=""footer"">
+    Networking
+  </div>
+</div>"
+"CGW
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Customer Gateway<br><br>on-prem equipment that connects local network to an AWS VPC
+  </div>
+
+  <div class=""footer"">
+    Networking
+  </div>
+</div>"
+"BGP
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Border Gateway Protocol<br><br>protocol designed to exchange routing and reachability information among autonomous systems
+  </div>
+
+  <div class=""footer"">
+    Networking
+  </div>
+</div>"
+"AWS VPN CloudHub
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Connect multiple branch offices together with a VPC.<br>Each branch has its own CGW; all are connected to the same VGW
+  </div>
+
+  <div class=""footer"">
+    Networking service
+  </div>
+</div>"
+"Software VPN
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Method of connecting on-prem network equipment to a VPC.<br>Host VPN software application on AWS EC2 instances<br>can be a Single point of failure
+  </div>
+
+  <div class=""footer"">
+    Networking
+  </div>
+</div>"
+"AWS DX
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Service that connects customer router directly to AWS services or vpcs. Used to eliminate internet connectivity reliability completely.<br><br>Can be a dedicated connection, hosted connection, or hosted VIF
+  </div>
+
+  <div class=""footer"">
+    Networking service
+  </div>
+</div>"
+"NACLs
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Network Access Control Lists<br><ul><li>User defined rules to allow or deny traffic to subnets in VPCs</li></ul>
+  </div>
+
+  <div class=""footer"">
+    Networking Security
+  </div>
+</div>"
+"VPC
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Virtual Private Cloud<br><ul><li>a virtual network environment defined within an AWS account</li></ul>
+  </div>
+
+  <div class=""footer"">
+    Networking
+  </div>
+</div>"
+"SG
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Security Group<br><ul><li>rules that filter traffic to individual resources such as EC2 instances</li><li>is stateful<ul>
+  <li>ie: traffic allowed in is automatically allowed out</li></ul></li></ul>
+<h4>
+  Example Security Group Setting for Subnet A in a VPC
+</h4>
+<table>
+  <thead><tr><th>Source</th><th>Protocol</th><td>Port</td></tr>
+</thead>
+<tbody>
+  <tr><td>198.51.100.0/24</td><td>TCP</td><td>22</td></tr>
+  <tr><td>Subnet A CIDR</td><td>All</td><td>All</td></tr>
+  <tr><td>Subnet B CIDR</td><td>TCP</td><td>22</td></tr>
+</tbody>
+</table>
+
+<table>
+  <thead><tr><th>Destination</th><th>Protocol</th><td>Port</td></tr>
+</thead>
+<tbody>
+  <tr><td>0.0.0.0/0</td><td>All</td><td>All</td></tr>
+</tbody>
+</table><br>
+
+  </div>
+
+  <div class=""footer"">
+    Networking Security
+  </div>
+</div>"
+"AZs
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Availability Zones
+  </div>
+
+  <div class=""footer"">
+    Networking
+  </div>
+</div>"
+"AWS Region
+
+<div class=""footer"">
+<ul><li>Can resources in one AWS Region interact with resources in another?</li></ul>
+</div>"	"  <div class=""content"">
+    <ul><li>Geographic area where AWS services are hosted</li><li>Each AWS Region is isolated from each other</li><li>Further divided into availability zones</li></ul>
+  </div>
+
+  <div class=""footer"">
+    Networking
+  </div>
+</div>"
+"Separating Resources
+
+<div class=""footer"">
+<ul><li>What are different ways to separate resources and workload (ie., production vs non-production)?</li></ul>
+</div>"	"  <div class=""content"">
+    <ul><li>By account</li><li>By VPC</li><li>By Subnet</li></ul>
+  </div>
+
+  <div class=""footer"">
+    Networking
+  </div>
+</div>"
+"AWS Backup
+
+<div class=""footer"">
+<ul><li>What are the settings of a backup plan?</li></ul>
+</div>"	"  <div class=""content"">
+    Settings include<br><ul><li>the backup vault</li><li>the schedule (frequency and time window)</li><li>life cycle for expiration or transition to cold storage</li><li>AWS Region where back ups are found</li></ul>Can apply to groups of AWS resources by tags
+  </div>
+
+  <div class=""footer"">
+    practice service
+  </div>
+</div>"
+"Tag Policies
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    <div>Defines what tags can be attached to different AWS resources</div><div><ul><li>Can enforce tagging correctness or simply report incorrect tagging</li></ul></div>
+  </div>
+
+  <div class=""footer"">
+    service
+  </div>
+</div>"
+"Control Tower
+
+<div class=""footer"">
+
+</div>"	"  <div class=""content"">
+    Automates set up of aws accounts/environments<br><ul><li>follows recommendations from AWS Well-Architected Framework</li><li>provide and enforce guardrails across entire organization<ul>
+  <li>rules are either <i>preventative</i> or <i>detective</i></li><li>rules can be mandatory, strongly recommended, or elective</li>
+  </ul></li><li>create account factory</li></ul>Leverage&nbsp;<b>CloudFormation&nbsp;</b>&nbsp;through stacks and stacksets
+  </div>
+
+  <div class=""footer"">
+    service
+  </div>
+</div>"
